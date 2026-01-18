@@ -91,6 +91,8 @@
     </style>
 </head>
 <body>
+    <button onclick="document.getElementById('bgm').play()">神秘小按钮</button>
+    <audio id="bgm" src="wyb.mp3" loop style="display:none"></audio>
     <h1>八二班神人消消乐</h1>
     <div class="tip">张吉人视角</div>
     <div class="score">分数: <span id="score">0</span></div>
@@ -102,7 +104,7 @@
         // 本地图片路径（HTML同级目录，图片命名为img1.png ~ img6.png）
         const ITEM_IMAGES = [
             "img1.png",
-            "img2.jif",
+            "img2.gif",
             "img3.png",
             "img4.png",
             "img5.png",
